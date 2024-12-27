@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "language": "Svenska",
+    "languageCode": "sv",
+    "direction": "ltr"
+  },
+
+  "meta": {
+    "title": "M.A.T-Fish | Premium fiskprodukter och förädling.",
+    "description": "Premium kvalitet odlad regnbågslax, sik och röding. Färsk fiskleverans över hela Finland."
+  },
+
+  "navigation": {
+    "home": "Hem",
+    "products": "Produkter",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "privacy": "Integritetspolicy",
+    "terms": "Användarvillkor"
+  },
+
+  "home": {
+    "hero": {
+      "subtitle": "Hållbar fiskodling från Ålands skärgårds rena vatten.",
+      "contact": "Kontakta oss"
+    },
+    "features": {
+      "quality": {
+        "title": "Premium Kvalitet",
+        "description": "Noga utvald premiumfisk från Ålands skärgårds rena vatten."
+      },
+      "fresh": {
+        "title": "Garanterad Färskhet",
+        "description": "Direktleverans från vår lokala anläggning för att säkerställa bästa kvalitet."
+      },
+      "sustainable": {
+        "title": "Hållbar Verksamhet",
+        "description": "Engagerade i miljömedvetna och hållbara fiskemetoder."
+      },
+      "local": {
+        "title": "Lokal Excellence",
+        "description": "Vi stödjer lokala samhällen och traditioner i Ålands skärgård."
+      }
+    },
+    "about": {
+      "title": "Vårt Åtagande.",
+      "description": "Vi är dedikerade till hållbar fiskodling i Ålands skärgård. Våra metoder hedrar både tradition och innovation, vilket garanterar produkter av högsta kvalitet och skyddar vår värdefulla marina miljö.",
+      "link": "Läs mer om oss"
+    },
+    "contact": {
+      "title": "Kontakta Oss",
+      "description": "Intresserad av våra produkter? Kontakta oss för att lära dig mer om våra hållbara fiskodlingsmetoder och premiumprodukter.",
+      "button": "Kontakta oss"
+    }
+  },
+
+  "products": {
+    "title": "Våra Produkter",
+    "subtitle": "Vi producerar högkvalitativ fisk från Ålands skärgårds rena vatten, där vi kombinerar traditionell expertis med moderna hållbara metoder.",
+    "stats": {
+      "countries": "Exportländer",
+      "years": "Års Erfarenhet",
+      "sustainable": "Hållbar",
+      "production": "Årsproduktion"
+    },
+    "rainbowTrout": {
+      "name": "Regnbåge",
+      "description": "Regnbåge är en av Finlands mest populära matfiskar, känd för sin mångsidighet och sitt näringsvärde.",
+      "details": "Vi odlar regnbågslax under noggrant övervakade förhållanden till en försäljningsstorlek på cirka 2,5 kilo under två odlingssäsonger. Den är en rik källa till omega-3-fettsyror, vitamin D och protein, vilket gör den lämplig för både vardagsmat och festmåltider."
+    },
+    "whitefish": {
+      "name": "Sik",
+      "description": "En högt värderad nordisk matfisk, känd för sin förfinade smak och mångsidighet i matlagningen.",
+      "details": "Vår sik kännetecknas av sitt magra, proteinrika vita kött. Vi odlar sik till en försäljningsstorlek på 0,4-1 kilo under kontrollerade förhållanden. Den passar utmärkt för gravning, rökning eller stekning. Vi levererar siken färsk."
+    },
+    "char": {
+      "name": "Röding",
+      "description": "En av världens nordligaste laxfiskarter, med en delikat smakprofil.",
+      "details": "Vi odlar röding i rena och kalla vatten som efterliknar deras naturliga livsmiljö. Köttet är rosa till orange i färgen, med en mjuk och aromatisk smak. Rik på omega-3-fettsyror och viktiga vitaminer växer röding till 1,5-2 kilo innan leverans."
+    },
+    "caviar": {
+      "name": "Regnbågsrom",
+      "description": "En säsongsdelikatess tillgänglig från sen höst till tidig vinter.",
+      "details": "Rik på omega-3-fettsyror och vitamin B12 är rommen både välsmakande och näringsrik. Vi levererar romsäckar till våra kunder för vidare förädling, och säkerställer färskhet och högsta kvalitet för den kommersiella sektorn."
+    },
+    "contact": {
+      "title": "Låt oss diskutera dina behov",
+      "description": "Vi berättar gärna mer om våra produkter och diskuterar hur vi kan samarbeta för att möta dina krav.",
+      "button": "Kontakta oss"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "title": "Om M.A.T-Fish",
+      "description": "Ett fiskodlingsföretag från Ålands skärgård, grundat år 2010, dedikerat till kvalitet och hållbar utveckling."
+    },
+    "values": {
+      "title": "Våra värderingar",
+      "quality": {
+        "title": "Kvalitetsexcellens",
+        "description": "Vi upprätthåller högsta standard genom hela vår verksamhet, från odling till leverans. Varje fisk odlas med omsorg i Ålands skärgårds rena vatten."
+      },
+      "sustainability": {
+        "title": "Miljöengagemang",
+        "description": "Våra odlingsmetoder är utformade för att skydda skärgårdens unika miljö. Vi tror på hållbar tillväxt som respekterar naturens balans."
+      },
+      "responsibility": {
+        "title": "Socialt ansvar",
+        "description": "Vi är stolta över att stödja vårt lokalsamhälle och upprätthålla starka relationer med våra partners, anställda och kunder."
+      },
+      "community": {
+        "title": "Lokalt arv",
+        "description": "Djupt rotade i Ålands skärgård bevarar vi traditionell kunskap samtidigt som vi anammar moderna, hållbara metoder."
+      }
+    },
+    "milestones": {
+      "title": "Vår resa",
+      "founding": {
+        "title": "Företagets Grundande",
+        "description": "Vi började vår verksamhet i byn Flisö i Föglö med fokus på traditionella fiskodlingsmetoder."
+      },
+      "expansion": {
+        "title": "Marknadsexpansion",
+        "description": "Vi utökade vår verksamhet och skapade starka partnerskap med ledande finska livsmedelsproducenter."
+      },
+      "modernization": {
+        "title": "Anläggningsmodernisering",
+        "description": "Vi implementerade moderna odlingsteknologier samtidigt som vi bevarade traditionella kvalitetsstandarder."
+      },
+      "sustainability": {
+        "title": "Hållbar Framtid",
+        "description": "Vi började fokusera mer på en hållbar framtid och förstärkte våra insatser för miljöskydd."
+      }
+    },
+    "contact": {
+      "title": "Låt oss diskutera dina behov",
+      "description": "Vi berättar gärna mer om våra produkter och diskuterar potentiellt samarbete.",
+      "button": "Kontakta oss"
+    }
+  },
+
+  "contactpage": {
+    "title": "Kontakta oss",
+    "subtitle": "Kontakta vårt expertteam för att diskutera dina fiskbehov.",
+    "roles": {
+      "ceo": "Verkställande direktör",
+      "sales": "Försäljningsrepresentant",
+      "chairman": "Styrelseordförande"
+    },
+    "location": {
+      "title": "Vår plats",
+      "subtitle": "Vi verkar i hjärtat av Ålands skärgård, i Flisö by i Föglö kommun.",
+      "visiting": "Besöksadress",
+      "postal": "Postadress"
+    }
+  },
+
+  "common": {
+    "company": {
+      "name": "M.A.T-Fish Ab Oy",
+      "slogan": "Fiskprodukter av premiumkvalitet",
+      "businessId": "FO-nummer",
+      "vatId": "Momsnummer"
+    },
+    "buttons": {
+      "readMore": "Läs mer",
+      "viewAll": "Visa alla",
+      "order": "Beställ nu",
+      "contact": "Kontakta oss",
+      "back": "Tillbaka",
+      "submit": "Skicka",
+      "cancel": "Avbryt"
+    },
+    "loading": "Laddar...",
+    "error": "Fel",
+    "success": "Klart",
+    "required": "Obligatorisk",
+    "optional": "Valfri"
+  },
+
+  "seo": {
+    "home": {
+      "title": "M.A.T-Fish - Premium fiskprodukter & bearbetning",
+      "description": "Ledande leverantör av premiumfiskprodukter i Finland. Färsk regnbåge, sik, röding och kaviar från hållbara källor."
+    },
+    "products": {
+      "title": "Våra produkter - Premiumfisk & kaviar | M.A.T-Fish",
+      "description": "Upptäck vårt utbud av premiumfiskprodukter inklusive regnbåge, sik, röding och säsongskaviar. Färsk och hållbart odlad."
+    },
+    "about": {
+      "title": "Om oss - M.A.T-Fish Ab Oy",
+      "description": "Läs om M.A.T-Fishs historia, värderingar och engagemang för hållbar fiskodling och bearbetning i Finlands skärgård."
+    },
+    "contact": {
+      "title": "Kontakta M.A.T-Fish - Nå oss",
+      "description": "Kontakta M.A.T-Fish för premiumfiskprodukter och bearbetningstjänster. Beläget i Föglö, Finland."
+    }
+  },
+
+  "nav": {
+    "home": "Hem",
+    "products": "Produkter",
+    "about": "Om oss",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "menu": "Meny",
+    "contact": "Kontakta oss",
+    "followUs": "Följ oss",
+    "rights": "Alla rättigheter förbehållna",
+    "tel": "Tel"
+  },
+  "contact": {
+    "title": "Kontakta oss",
+    "email": "E-post",
+    "phone": "Telefon"
+  }
+}

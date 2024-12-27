@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "language": "Suomi",
+    "languageCode": "fi",
+    "direction": "ltr"
+  },
+
+  "meta": {
+    "title": "M.A.T-Fish | Korkealaatuiset kalatuotteet ja -jalostus.",
+    "description": "Korkealaatuista kasvatettua kirjolohta, siikaa ja nieriää. Tuoreen kalan toimitus ympäri Suomen."
+  },
+
+  "navigation": {
+    "home": "Etusivu",
+    "products": "Tuotteet",
+    "about": "Tietoa meistä",
+    "contact": "Yhteystiedot",
+    "privacy": "Tietosuoja",
+    "terms": "Käyttöehdot"
+  },
+
+  "home": {
+    "hero": {
+      "subtitle": "Kestävää kalankasvatusta Ahvenanmaan saariston puhtaista vesistä.",
+      "contact": "Ota yhteyttä"
+    },
+    "features": {
+      "quality": {
+        "title": "Korkea Laatu",
+        "description": "Huolellisesti valittua premium-kalaa Ahvenanmaan saariston puhtaista vesistä."
+      },
+      "fresh": {
+        "title": "Tuoreus Taattu",
+        "description": "Suora toimitus paikallisesta laitoksestamme parhaan laadun varmistamiseksi."
+      },
+      "sustainable": {
+        "title": "Kestävä Toiminta",
+        "description": "Sitoutuneet ympäristötietoisiin ja kestäviin kalastusmenetelmiin."
+      },
+      "local": {
+        "title": "Paikallinen Osaaminen",
+        "description": "Tuemme paikallisia yhteisöjä ja perinteitä Ahvenanmaan saaristossa."
+      }
+    },
+    "about": {
+      "title": "Sitoumuksemme.",
+      "description": "Olemme omistautuneet kestävään kalankasvatukseen Ahvenanmaan saaristossa. Menetelmämme kunnioittavat sekä perinteitä että innovaatioita, varmistaen korkeimman laadun tuotteet ja suojellen arvokasta meriympäristöämme.",
+      "link": "Lue lisää meistä"
+    },
+    "contact": {
+      "title": "Ota Yhteyttä",
+      "description": "Kiinnostuitko tuotteistamme? Ota yhteyttä ja kysy lisää kestävistä kalankasvatusmenetelmistämme ja premium-tuotteistamme.",
+      "button": "Ota yhteyttä"
+    }
+  },
+
+  "products": {
+    "title": "Tuotteemme",
+    "subtitle": "Tuotamme korkealaatuista kalaa Ahvenanmaan saariston puhtaista vesistä, yhdistäen perinteisen tietotaidon ja modernit kestävät käytännöt.",
+    "stats": {
+      "countries": "Vientimaat",
+      "years": "Vuotta Kokemusta",
+      "sustainable": "Vastuullinen",
+      "production": "Vuosituotanto"
+    },
+    "rainbowTrout": {
+      "name": "Kirjolohi",
+      "description": "Kirjolohi on yksi Suomen suosituimmista ruokakaloista, joka tunnetaan monipuolisuudestaan ja ravintorikkaudestaan.",
+      "details": "Kasvatamme kirjolohen tarkkaan valvotuissa olosuhteissa noin 2,5 kilon myyntikokoon kahden kasvukauden aikana. Se on runsas omega-3-rasvahappojen, D-vitamiinin ja proteiinin lähde, sopien sekä arkeen että juhlaan."
+    },
+    "whitefish": {
+      "name": "Siika",
+      "description": "Arvostettu pohjoismainen ruokakala, joka tunnetaan hienostuneesta maustaan ja monikäyttöisyydestään.",
+      "details": "Siikamme tunnistaa sen vähärasvaisesta, proteiinipitoisesta valkoisesta lihasta. Kasvatamme siiat 0,4-1 kilon myyntikokoon valvotuissa olosuhteissa. Se sopii erinomaisesti niin graavattavaksi, savustettavaksi kuin paistettavaksikin. Toimitamme siian tuoreena."
+    },
+    "char": {
+      "name": "Nieriä",
+      "description": "Yksi maailman pohjoisimmista lohikalalajeista, tarjoten hienostuneen makuprofiilin.",
+      "details": "Kasvatamme nieriät puhtaissa ja kylmissä vesissä, jotka vastaavat niiden luonnollista elinympäristöä. Liha on väriltään vaaleanpunaisen ja oranssin väliltä, maultaan pehmeä ja aromaattinen. Runsaasti omega-3-rasvahappoja ja tärkeitä vitamiineja sisältävä nieriä kasvaa 1,5-2 kilon painoiseksi ennen toimitusta."
+    },
+    "caviar": {
+      "name": "Kirjolohen mäti",
+      "description": "Sesonkiherkku, jota on saatavilla myöhäissyksystä alkutalveen.",
+      "details": "Runsaasti omega-3-rasvahappoja ja B12-vitamiinia sisältävä mäti on sekä maukas että ravitseva. Toimitamme mätipussit asiakkaillemme jatkojalostusta varten varmistaen tuoreuden ja korkeimman laadun kaupalliselle sektorille."
+    },
+    "contact": {
+      "title": "Keskustellaan tarpeistanne",
+      "description": "Kerromme mielellämme lisää tuotteistamme ja siitä, miten voisimme yhdessä vastata teidän tarpeisiinne.",
+      "button": "Ota yhteyttä"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "title": "Tietoa M.A.T-Fish:stä",
+      "description": "Ahvenanmaan saaristossa vuonna 2010 perustettu kalankasvatusyritys, joka on omistautunut laadulle ja kestävälle kehitykselle."
+    },
+    "values": {
+      "title": "Arvomme",
+      "quality": {
+        "title": "Laatuosaaminen",
+        "description": "Ylläpidämme korkeimpia standardeja kaikessa toiminnassamme kasvatuksesta toimitukseen. Jokainen kala kasvatetaan huolella Ahvenanmaan saariston puhtaissa vesissä."
+      },
+      "sustainability": {
+        "title": "Ympäristövastuu",
+        "description": "Kasvatusmenetelmämme on suunniteltu suojelemaan saariston ainutlaatuista ympäristöä. Uskomme kestävään kasvuun, joka kunnioittaa luonnon tasapainoa."
+      },
+      "responsibility": {
+        "title": "Sosiaalinen vastuu",
+        "description": "Olemme ylpeitä voidessamme tukea paikallisyhteisöämme ja ylläpitää vahvoja suhteita kumppaneihimme, työntekijöihimme ja asiakkaisiimme."
+      },
+      "community": {
+        "title": "Paikallinen perintö",
+        "description": "Ahvenanmaan saaristoon syvästi juurtuneena säilytämme perinteistä tietotaitoa samalla kun omaksumme moderneja kestäviä käytäntöjä."
+      }
+    },
+    "milestones": {
+      "title": "Matkamme",
+      "founding": {
+        "title": "Yrityksen perustaminen",
+        "description": "Aloitimme toimintamme Flisön kylässä Föglössä keskittyen perinteisiin kalankasvatusmenetelmiin."
+      },
+      "expansion": {
+        "title": "Markkinoiden laajentuminen",
+        "description": "Laajensimme toimintaa ja loimme vahvat kumppanuudet johtavien suomalaisten elintarviketuottajien kanssa."
+      },
+      "modernization": {
+        "title": "Laitosten modernisointi",
+        "description": "Otimme käyttöön modernit kasvatusteknologiat säilyttäen samalla perinteiset laatustandardit."
+      },
+      "sustainability": {
+        "title": "Kestävä tulevaisuus",
+        "description": "Aloimme panostaa entistä enemmän kestävään tulevaisuuteen ja tehostimme ympäristönsuojelutoimiamme."
+      }
+    },
+    "contact": {
+      "title": "Keskustellaan tarpeistanne",
+      "description": "Kerromme mielellämme lisää tuotteistamme ja keskustelemme mahdollisesta yhteistyöstä.",
+      "button": "Ota yhteyttä"
+    }
+  },
+
+  "contactpage": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Ota yhteyttä asiantuntijatiimiimme keskustellaksesi kalatarpeistasi.",
+    "roles": {
+      "ceo": "Toimitusjohtaja",
+      "sales": "Myyntiedustaja",
+      "chairman": "Hallituksen puheenjohtaja"
+    },
+    "location": {
+      "title": "Sijaintimme",
+      "subtitle": "Toimimme Ahvenanmaan saariston sydämessä, Föglön kunnassa Flisön kylässä.",
+      "visiting": "Käyntiosoite",
+      "postal": "Postiosoite"
+    }
+  },
+
+  "common": {
+    "company": {
+      "name": "M.A.T-Fish Ab Oy",
+      "slogan": "Korkealaatuisia kalatuotteita",
+      "businessId": "Y-tunnus",
+      "vatId": "ALV-tunnus"
+    },
+    "buttons": {
+      "readMore": "Lue lisää",
+      "viewAll": "Näytä kaikki",
+      "order": "Tilaa nyt",
+      "contact": "Ota yhteyttä",
+      "back": "Takaisin",
+      "submit": "Lähetä",
+      "cancel": "Peruuta"
+    },
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "success": "Onnistui",
+    "required": "Pakollinen",
+    "optional": "Valinnainen"
+  },
+
+  "seo": {
+    "home": {
+      "title": "M.A.T-Fish - Korkealaatuiset kalatuotteet ja -jalostus",
+      "description": "Johtava korkealaatuisten kalatuotteiden toimittaja Suomessa. Tuore kirjolohi, siika, nieriä ja kaviaari kestävistä lähteistä."
+    },
+    "products": {
+      "title": "Tuotteemme - Premium-kala ja kaviaari | M.A.T-Fish",
+      "description": "Tutustu valikoimaamme premium-kalatuotteita: kirjolohi, siika, nieriä ja sesongin kaviaari. Tuoretta ja kestävästi kasvatettua."
+    },
+    "about": {
+      "title": "Tietoa meistä - M.A.T-Fish Ab Oy",
+      "description": "Tutustu M.A.T-Fishin historiaan, arvoihin ja sitoutumiseen kestävään kalankasvatukseen ja -jalostukseen Suomen saaristossa."
+    },
+    "contact": {
+      "title": "Ota yhteyttä M.A.T-Fish - Yhteystiedot",
+      "description": "Ota yhteyttä M.A.T-Fishiin korkealaatuisten kalatuotteiden ja jalostuspalveluiden osalta. Sijaitsemme Föglössä."
+    }
+  },
+
+  "nav": {
+    "home": "Etusivu",
+    "products": "Tuotteet",
+    "about": "Tietoa meistä",
+    "contact": "Yhteystiedot"
+  },
+  "footer": {
+    "menu": "Valikko",
+    "contact": "Ota yhteyttä",
+    "followUs": "Seuraa meitä",
+    "rights": "Kaikki oikeudet pidätetään",
+    "tel": "Puh"
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "email": "Sähköposti",
+    "phone": "Puhelin"
+  }
+}
