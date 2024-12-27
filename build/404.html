@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>M.A.T-Fish</title>
     <script type="text/javascript">
-      var segmentCount = 0;
+      var pathSegmentsToKeep = 0;
       var l = window.location;
       l.replace(
         l.protocol +
@@ -13,13 +13,13 @@
           (l.port ? ":" + l.port : "") +
           l.pathname
             .split("/")
-            .slice(0, 1 + segmentCount)
+            .slice(0, 1 + pathSegmentsToKeep)
             .join("/") +
           "/?/" +
           l.pathname
             .slice(1)
             .split("/")
-            .slice(segmentCount)
+            .slice(pathSegmentsToKeep)
             .join("/")
             .replace(/&/g, "~and~") +
           (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
@@ -27,20 +27,5 @@
       );
     </script>
   </head>
-  <body>
-    <div
-      style="
-        padding: 20px;
-        text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      "
-    >
-      <h1 style="color: #003366; margin-bottom: 16px">Page Not Found</h1>
-      <p style="color: #4a5568; margin-bottom: 8px">
-        Redirecting you to the homepage...
-      </p>
-      <p style="color: #4a5568">Ohjataan sinut etusivulle...</p>
-    </div>
-  </body>
+  <body></body>
 </html>

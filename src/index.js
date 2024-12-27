@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 
 import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
-import { createHashRouter, Navigate, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import AboutPage from "./pages/AboutPage";
@@ -68,31 +68,59 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-// Changed to createHashRouter for GitHub Pages compatibility
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Navigate to="/fi" replace />, // Always redirect to Finnish by default
-      },
-      {
-        path: ":lang",
-        children: [
-          { index: true, element: <HomePage /> },
-          { path: "about", element: <AboutPage /> },
-          { path: "contact", element: <ContactPage /> },
-          { path: "products", element: <ProductsPage /> },
-          { path: "products/:productId", element: <ProductsPage /> },
-          // Add a catch-all redirect to Finnish
-          { path: "*", element: <Navigate to="/fi" replace /> },
-        ],
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          index: true,
+          element: <HomePage />,
+        },
+        {
+          path: "products",
+          element: <ProductsPage />,
+        },
+        {
+          path: "about",
+          element: <AboutPage />,
+        },
+        {
+          path: "contact",
+          element: <ContactPage />,
+        },
+        // Add language paths
+        {
+          path: "/:lang",
+          children: [
+            {
+              index: true,
+              element: <HomePage />,
+            },
+            {
+              path: "products",
+              element: <ProductsPage />,
+            },
+            {
+              path: "about",
+              element: <AboutPage />,
+            },
+            {
+              path: "contact",
+              element: <ContactPage />,
+            },
+          ],
+        },
+        {
+          path: "*",
+          element: <HomePage />,
+        },
+      ],
+    },
+  ],
+  { basename: process.env.PUBLIC_URL }
+);
 
 const container = document.getElementById("root");
 if (!container) {

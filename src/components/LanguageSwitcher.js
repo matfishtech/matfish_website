@@ -2,12 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { Check, ChevronDown, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useLocation, useNavigate } from "react-router-dom";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-  const location = useLocation();
-  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -29,27 +26,9 @@ const LanguageSwitcher = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Close dropdown on route change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
-
-  // Get current language from the URL
-  const getCurrentLanguage = () => {
-    const path = location.hash.slice(1) || location.pathname; // Get path from hash
-    const langMatch = path.match(/^\/(en|fi|sv)/);
-    return langMatch ? langMatch[1] : "fi"; // Default to Finnish
-  };
-
-  const currentLang = getCurrentLanguage();
-
   // Handle language change
   const changeLanguage = (langCode) => {
     i18n.changeLanguage(langCode);
-    const currentPath = location.hash.slice(1) || "/";
-    const pathWithoutLang = currentPath.replace(/^\/(en|fi|sv)/, "");
-    const newPath = `/${langCode}${pathWithoutLang || ""}`;
-    navigate(newPath);
     setIsOpen(false);
   };
 
@@ -66,11 +45,11 @@ const LanguageSwitcher = () => {
       >
         <Globe className="w-4 h-4" />
         <span className="hidden sm:inline">
-          {languages.find((lang) => lang.code === currentLang)?.native}
+          {languages.find((lang) => lang.code === i18n.language)?.native}
         </span>
         <span className="sm:hidden">
           {languages
-            .find((lang) => lang.code === currentLang)
+            .find((lang) => lang.code === i18n.language)
             ?.code.toUpperCase()}
         </span>
         <ChevronDown
@@ -94,18 +73,18 @@ const LanguageSwitcher = () => {
               className={`w-full px-4 py-2 text-left flex items-center gap-3 
                          hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors
                          ${
-                           currentLang === language.code
+                           i18n.language === language.code
                              ? "text-blue-600 dark:text-blue-400"
                              : "text-gray-700 dark:text-gray-300"
                          }`}
               role="option"
-              aria-selected={currentLang === language.code}
+              aria-selected={i18n.language === language.code}
             >
               <span className="text-lg" aria-hidden="true">
                 {language.flag}
               </span>
               <span className="flex-1">{language.native}</span>
-              {currentLang === language.code && (
+              {i18n.language === language.code && (
                 <Check className="w-4 h-4" aria-hidden="true" />
               )}
             </button>

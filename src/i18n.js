@@ -22,15 +22,17 @@ i18n
         translation: svTranslation,
       },
     },
-    fallbackLng: "fi",
+    fallbackLng: "fi", // Default language
     supportedLngs: ["fi", "sv", "en"],
     detection: {
-      order: ["path", "localStorage", "navigator"],
-      caches: ["localStorage"],
-      lookupFromPathIndex: 0,
+      order: ["localStorage", "navigator"], // Removed 'path' as we don't want URL detection
+      caches: ["localStorage"], // Store language preference in localStorage
     },
     interpolation: {
       escapeValue: false,
+    },
+    react: {
+      useSuspense: true,
     },
   });
 
