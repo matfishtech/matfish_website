@@ -2,20 +2,21 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { Check, ChevronDown, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  // Language options
   const languages = [
     { code: "fi", name: "Finnish", native: "Suomi", flag: "🇫🇮" },
     { code: "en", name: "English", native: "English", flag: "🇬🇧" },
     { code: "sv", name: "Swedish", native: "Svenska", flag: "🇸🇪" },
   ];
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -26,15 +27,27 @@ const LanguageSwitcher = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Handle language change
   const changeLanguage = (langCode) => {
+    const currentPath = location.pathname;
+    const pathSegments = currentPath.split("/");
+
+    if (
+      pathSegments[1] &&
+      i18n.options.supportedLngs.includes(pathSegments[1])
+    ) {
+      pathSegments.splice(1, 1);
+    }
+
+    pathSegments.splice(1, 0, langCode);
+    const newPath = pathSegments.join("/");
+
     i18n.changeLanguage(langCode);
+    navigate(newPath);
     setIsOpen(false);
   };
 
   return (
     <div className="relative" ref={dropdownRef}>
-      {/* Current Language Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 
@@ -58,7 +71,6 @@ const LanguageSwitcher = () => {
         />
       </button>
 
-      {/* Language Dropdown */}
       {isOpen && (
         <div
           className="absolute right-0 mt-2 py-2 w-48 bg-white dark:bg-gray-900 

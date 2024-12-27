@@ -226,9 +226,16 @@ const Header = () => {
   ];
 
   const getCurrentLanguage = () => {
+    // Get language from URL first
     const path = location.pathname;
     const langMatch = path.match(/^\/(en|fi|sv)/);
-    return langMatch ? langMatch[1] : "fi";
+    const urlLang = langMatch ? langMatch[1] : null;
+
+    // Then check localStorage
+    const storedLang = localStorage.getItem("i18nextLng");
+
+    // Finally fall back to default
+    return urlLang || storedLang || "fi";
   };
 
   const currentLang = getCurrentLanguage();
