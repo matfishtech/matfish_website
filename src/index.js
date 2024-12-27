@@ -5,11 +5,7 @@ import React, { Suspense } from "react";
 
 import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
-import {
-  createBrowserRouter,
-  Navigate,
-  RouterProvider,
-} from "react-router-dom";
+import { createHashRouter, Navigate, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import AboutPage from "./pages/AboutPage";
@@ -17,17 +13,6 @@ import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 
-const DefaultLanguageRedirect = () => {
-  const userLanguage = navigator.language.split("-")[0];
-  const supportedLanguages = ["fi", "sv", "en", "ja"];
-  // Use user's language if supported, otherwise default to 'en'
-  const defaultLang = supportedLanguages.includes(userLanguage)
-    ? userLanguage
-    : "en";
-  return <Navigate to={`/${defaultLang}`} replace />;
-};
-
-// Loading component for Suspense
 const LoadingScreen = () => (
   <div className="min-h-screen flex items-center justify-center bg-gray-50">
     <div className="text-center">
@@ -37,13 +22,11 @@ const LoadingScreen = () => (
   </div>
 );
 
-// Error logging
 const logError = (error, errorInfo) => {
   console.error("Application Error:", error);
   console.error("Error Info:", errorInfo);
 };
 
-// Error boundary component
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -81,20 +64,19 @@ class ErrorBoundary extends React.Component {
         </div>
       );
     }
-
     return this.props.children;
   }
 }
 
-// Create router configuration
-const router = createBrowserRouter([
+// Changed to createHashRouter for GitHub Pages compatibility
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
     children: [
       {
         index: true,
-        element: <DefaultLanguageRedirect />, // Use the new component
+        element: <Navigate to="/fi" replace />, // Always redirect to Finnish by default
       },
       {
         path: ":lang",
@@ -104,13 +86,14 @@ const router = createBrowserRouter([
           { path: "contact", element: <ContactPage /> },
           { path: "products", element: <ProductsPage /> },
           { path: "products/:productId", element: <ProductsPage /> },
+          // Add a catch-all redirect to Finnish
+          { path: "*", element: <Navigate to="/fi" replace /> },
         ],
       },
     ],
   },
 ]);
 
-// Root element
 const container = document.getElementById("root");
 if (!container) {
   throw new Error(
@@ -120,7 +103,6 @@ if (!container) {
 
 const root = createRoot(container);
 
-// App rendering with RouterProvider and all v7 future flags
 root.render(
   <React.StrictMode>
     <ErrorBoundary>
@@ -129,14 +111,12 @@ root.render(
           <RouterProvider
             router={router}
             future={{
-              // Existing flags
               v7_startTransition: true,
               v7_relativeSplatPath: true,
-              // New flags to address warnings
-              v7_fetcherPersist: true, // Addresses fetcher persistence warning
-              v7_normalizeFormMethod: true, // Addresses formMethod normalization warning
-              v7_partialHydration: true, // Addresses RouterProvider hydration warning
-              v7_skipActionErrorRevalidation: true, // Addresses 4xx/5xx action revalidation warning
+              v7_fetcherPersist: true,
+              v7_normalizeFormMethod: true,
+              v7_partialHydration: true,
+              v7_skipActionErrorRevalidation: true,
             }}
           />
         </Suspense>
@@ -145,7 +125,6 @@ root.render(
   </React.StrictMode>
 );
 
-// Handle uncaught errors
 window.addEventListener("unhandledrejection", (event) => {
   logError(event.reason, "Unhandled Promise Rejection");
 });
@@ -154,7 +133,6 @@ window.addEventListener("error", (event) => {
   logError(event.error, "Uncaught Error");
 });
 
-// Report web vitals
 const reportWebVitals = (metric) => {
   console.log(metric);
 };

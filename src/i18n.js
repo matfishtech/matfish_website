@@ -22,18 +22,15 @@ i18n
         translation: svTranslation,
       },
     },
-    fallbackLng: "en",
-    supportedLngs: ["en", "fi", "sv"],
+    fallbackLng: "fi",
+    supportedLngs: ["fi", "sv", "en"],
     detection: {
-      order: ["path", "navigator"],
+      order: ["path", "localStorage", "navigator"],
+      caches: ["localStorage"],
       lookupFromPathIndex: 0,
-      checkWhitelist: true,
     },
     interpolation: {
       escapeValue: false,
-    },
-    react: {
-      useSuspense: true,
     },
   });
 

@@ -36,9 +36,9 @@ const LanguageSwitcher = () => {
 
   // Get current language from the URL
   const getCurrentLanguage = () => {
-    const path = location.pathname;
+    const path = location.hash.slice(1) || location.pathname; // Get path from hash
     const langMatch = path.match(/^\/(en|fi|sv)/);
-    return langMatch ? langMatch[1] : "en";
+    return langMatch ? langMatch[1] : "fi"; // Default to Finnish
   };
 
   const currentLang = getCurrentLanguage();
@@ -46,7 +46,8 @@ const LanguageSwitcher = () => {
   // Handle language change
   const changeLanguage = (langCode) => {
     i18n.changeLanguage(langCode);
-    const pathWithoutLang = location.pathname.replace(/^\/(en|fi|sv)/, "");
+    const currentPath = location.hash.slice(1) || "/";
+    const pathWithoutLang = currentPath.replace(/^\/(en|fi|sv)/, "");
     const newPath = `/${langCode}${pathWithoutLang || ""}`;
     navigate(newPath);
     setIsOpen(false);
