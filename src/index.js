@@ -5,7 +5,11 @@ import React, { Suspense } from "react";
 
 import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 
 import App from "./App";
 import AboutPage from "./pages/AboutPage";
@@ -72,6 +76,10 @@ const router = createBrowserRouter(
   [
     {
       path: "/",
+      element: <Navigate to="/fi" replace />,
+    },
+    {
+      path: "/:lang",
       element: <App />,
       children: [
         {
@@ -90,33 +98,11 @@ const router = createBrowserRouter(
           path: "contact",
           element: <ContactPage />,
         },
-        // Add language paths
-        {
-          path: "/:lang",
-          children: [
-            {
-              index: true,
-              element: <HomePage />,
-            },
-            {
-              path: "products",
-              element: <ProductsPage />,
-            },
-            {
-              path: "about",
-              element: <AboutPage />,
-            },
-            {
-              path: "contact",
-              element: <ContactPage />,
-            },
-          ],
-        },
-        {
-          path: "*",
-          element: <HomePage />,
-        },
       ],
+    },
+    {
+      path: "*",
+      element: <Navigate to="/fi" replace />,
     },
   ],
   { basename: process.env.PUBLIC_URL }
@@ -144,7 +130,7 @@ root.render(
               v7_fetcherPersist: true,
               v7_normalizeFormMethod: true,
               v7_partialHydration: true,
-              v7_skipActionErrorRevalidation: true,
+              v7_skipActionErrorErrorRevalidation: true,
             }}
           />
         </Suspense>

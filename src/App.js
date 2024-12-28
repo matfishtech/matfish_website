@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { Outlet } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -10,7 +10,15 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const { t, i18n } = useTranslation();
+  const { lang } = useParams();
   const currentLang = i18n.language || "fi";
+
+  // Sync URL language parameter with i18n
+  useEffect(() => {
+    if (lang && lang !== currentLang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, currentLang, i18n]);
 
   return (
     <HelmetProvider>
