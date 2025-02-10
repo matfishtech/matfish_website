@@ -17,6 +17,7 @@
 
     <script type="text/javascript">
       (function (l) {
+        // Part 1: Handle 404 redirects
         if (l.search[1] === "/") {
           var decoded = l.search
             .slice(1)
@@ -30,6 +31,11 @@
             null,
             l.pathname.slice(0, -1) + decoded + l.hash
           );
+        }
+        // Part 2: Handle direct navigation
+        if (l.pathname !== "/" && !l.search.includes("?/")) {
+          var newPath = "/?/" + l.pathname.slice(1);
+          window.history.replaceState(null, null, newPath);
         }
       })(window.location);
     </script>
@@ -162,6 +168,42 @@
         "areaServed": {
           "@type": "Country",
           "name": "Finland"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://matfish.fi/social-preview.jpg"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://matfish.fi"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://matfish.fi/en/products"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "About",
+                "item": "https://matfish.fi/en/about"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contact",
+                "item": "https://matfish.fi/en/contact"
+              }
+            ]
+          }
         }
       }
     </script>

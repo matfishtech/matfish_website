@@ -1,32 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage variants -->
   <url>
-    <loc>https://matfish.fi/</loc>
-    <lastmod>2024-10-30</lastmod>
+    <loc>https://matfish.fi/fi</loc>
+    <lastmod>2024-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv"/>
   </url>
 
-  <!-- Main pages -->
   <url>
-    <loc>https://matfish.fi/en/contact</loc>
-    <lastmod>2024-10-30</lastmod>
+    <loc>https://matfish.fi/en</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv"/>
+  </url>
+
+  <url>
+    <loc>https://matfish.fi/sv</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en"/>
+  </url>
+
+  <!-- About pages -->
+  <url>
+    <loc>https://matfish.fi/fi/about</loc>
+    <lastmod>2024-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/about"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/about"/>
+  </url>
+
+  <url>
+    <loc>https://matfish.fi/en/about</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/about"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/about"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/about"/>
+  </url>
+
+  <url>
+    <loc>https://matfish.fi/sv/about</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/about"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/about"/>
+  </url>
+
+  <!-- Products pages -->
+  <url>
+    <loc>https://matfish.fi/fi/products</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/products"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/products"/>
   </url>
 
   <url>
     <loc>https://matfish.fi/en/products</loc>
-    <lastmod>2024-10-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/products"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/products"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/products"/>
+  </url>
+
+  <url>
+    <loc>https://matfish.fi/sv/products</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/products"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/products"/>
+  </url>
+
+  <!-- Contact pages -->
+  <url>
+    <loc>https://matfish.fi/fi/contact</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/contact"/>
   </url>
 
   <url>
     <loc>https://matfish.fi/en/contact</loc>
-    <lastmod>2024-10-30</lastmod>
+    <lastmod>2024-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/contact"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/contact"/>
+  </url>
+
+  <url>
+    <loc>https://matfish.fi/sv/contact</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://matfish.fi/sv/contact"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://matfish.fi/fi/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://matfish.fi/en/contact"/>
   </url>
 </urlset>
