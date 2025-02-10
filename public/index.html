@@ -9,6 +9,11 @@
       name="google-site-verification"
       content="GEIOtRN4nbQPFufmzO4ys2FYsJeotW8UfmKv9VBZgZA"
     />
+    <link rel="canonical" href="https://matfish.fi/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="geo.region" content="FI-01" />
+    <meta name="geo.position" content="60.0223;20.3745" />
+    <meta name="ICBM" content="60.0223, 20.3745" />
 
     <script type="text/javascript">
       (function (l) {
@@ -36,7 +41,7 @@
     />
     <meta
       name="description"
-      content="Premium quality farmed rainbow trout, whitefish, and char. Fresh fish delivery across Finland. Specializing in fish processing and premium caviar production."
+      content="Premium Finnish rainbow trout, whitefish, and char, delivered fresh across the Nordics. Explore our specialty caviar production and professional fish processing services. Family-owned since 2010, proudly serving restaurants and retailers nationwide."
     />
     <meta
       name="keywords"
@@ -53,7 +58,7 @@
     />
     <meta
       property="og:description"
-      content="Premium quality farmed rainbow trout, whitefish, and char. Fresh fish delivery across Finland. Specializing in fish processing and premium caviar production."
+      content="Premium Finnish rainbow trout, whitefish, and char, delivered fresh across the Nordics. Explore our specialty caviar production and professional fish processing services. Family-owned since 2010, proudly serving restaurants and retailers nationwide."
     />
     <meta property="og:image" content="%PUBLIC_URL%/social-preview.jpg" />
     <meta property="og:site_name" content="M.A.T-Fish Ab Oy" />
@@ -68,7 +73,7 @@
     />
     <meta
       name="twitter:description"
-      content="Premium quality farmed rainbow trout, whitefish, and char. Fresh fish delivery across Finland. Specializing in fish processing and premium caviar production."
+      content="Premium Finnish rainbow trout, whitefish, and char, delivered fresh across the Nordics. Explore our specialty caviar production and professional fish processing services. Family-owned since 2010, proudly serving restaurants and retailers nationwide."
     />
     <meta name="twitter:image" content="%PUBLIC_URL%/social-preview.jpg" />
 
@@ -106,22 +111,58 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": ["Organization", "FoodEstablishment", "WholesaleStore"],
         "name": "M.A.T-Fish Ab Oy",
         "url": "https://matfish.fi",
-        "logo": "https://matfish.fi/logo.png",
+        "logo": "https://matfish.fi/android-chrome-512x512.png",
         "description": "Premium quality farmed rainbow trout, whitefish, and char producer in Finland",
+        "location": {
+          "@type": "Place",
+          "name": "Visiting Address",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Flisövägen 204",
+            "addressLocality": "Föglö",
+            "postalCode": "22710",
+            "addressRegion": "Åland",
+            "addressCountry": "Finland"
+          }
+        },
         "address": {
           "@type": "PostalAddress",
-          "addressCountry": "FI"
+          "streetAddress": "Tingsvägen 3",
+          "addressLocality": "Föglö",
+          "postalCode": "22710",
+          "addressRegion": "Åland",
+          "addressCountry": "Finland"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "60.0223",
+          "longitude": "20.3745"
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+358-YOUR-PHONE",
+          "telephone": "+358401454014",
           "contactType": "customer service",
           "availableLanguage": ["en", "fi", "sv"]
         },
-        "sameAs": ["YOUR_FACEBOOK_URL", "YOUR_LINKEDIN_URL"]
+        "sameAs": [
+          "https://www.linkedin.com/company/matfish",
+          "https://www.instagram.com/matfishcompany/"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "06:00",
+          "closes": "15:00",
+          "timeZone": "Europe/Helsinki"
+        },
+        "priceRange": "€€",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Finland"
+        }
       }
     </script>
 
