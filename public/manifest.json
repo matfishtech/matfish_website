@@ -1,12 +1,19 @@
 {
   "short_name": "M.A.T-Fish",
-  "name": "M.A.T-Fish Ab Oy",
-  "description": "Premium quality farmed rainbow trout, whitefish, and char producer in Finland.",
-  "categories": ["business", "food", "fish", "seafood"],
+  "name": "M.A.T-Fish Ab Oy | Premium Fish Products & Processing",
+  "description": "Premium Finnish rainbow trout, whitefish, and char, delivered fresh across the Nordics. Specializing in fish processing and premium caviar production.",
+  "categories": [
+    "business",
+    "food",
+    "fish",
+    "seafood",
+    "wholesale",
+    "processing"
+  ],
   "lang": "fi",
-  "start_url": "/",
+  "start_url": "/?source=pwa",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "any",
   "theme_color": "#1e40af",
   "background_color": "#ffffff",
   "shortcuts": [
@@ -14,14 +21,21 @@
       "name": "View Products",
       "short_name": "Products",
       "description": "View our fresh fish products",
-      "url": "/products",
+      "url": "/en/products",
       "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
     },
     {
       "name": "Contact Us",
       "short_name": "Contact",
       "description": "Get in touch with us",
-      "url": "/contact",
+      "url": "/en/contact",
+      "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "About Us",
+      "short_name": "About",
+      "description": "Learn about M.A.T-Fish",
+      "url": "/en/about",
       "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
     }
   ],
@@ -51,7 +65,8 @@
     {
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/favicon.ico",
@@ -64,7 +79,8 @@
       "src": "/images/hero/hero-background.jpg",
       "type": "image/jpeg",
       "sizes": "1080x1920",
-      "label": "M.A.T-Fish Homepage"
+      "form_factor": "wide",
+      "label": "M.A.T-Fish Homepage - Premium Fish Products"
     }
   ],
   "related_applications": [],
