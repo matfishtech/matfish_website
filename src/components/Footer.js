@@ -193,7 +193,7 @@ function Footer() {
         <TopSection>
           <FooterSection>
             <FooterTitle>M.A.T-Fish Ab Oy</FooterTitle>
-            <FooterText>Flisövägen 204</FooterText>
+            <FooterText>Flisövägen 240</FooterText>
             <FooterText>22710 Föglö</FooterText>
             <FooterText>2835881-3</FooterText>
           </FooterSection>

@@ -304,7 +304,7 @@ const ContactPage = () => {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
                       {t("contactpage.location.visiting", "Visiting Address")}
                     </h3>
-                    <p className="text-lg text-gray-600">Flisövägen 204</p>
+                    <p className="text-lg text-gray-600">Flisövägen 240</p>
                     <p className="text-lg text-gray-600">22710 Föglö</p>
                     <p className="text-lg text-gray-600">Åland, Finland</p>
                   </div>
@@ -319,7 +319,7 @@ const ContactPage = () => {
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
                       {t("contactpage.location.postal", "Postal Address")}
                     </h3>
-                    <p className="text-lg text-gray-600">Flisövägen 204</p>
+                    <p className="text-lg text-gray-600">Flisövägen 240</p>
                     <p className="text-lg text-gray-600">22710 Föglö</p>
                     <p className="text-lg text-gray-600">Åland, Finland</p>
                   </div>
