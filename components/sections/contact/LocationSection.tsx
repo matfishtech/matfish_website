@@ -1,9 +1,12 @@
 import { type Dictionary } from "@/lib/i18n";
-import { companyDisplayAddress, site } from "@/lib/site";
+import { companyDisplayAddress } from "@/lib/site";
 
 interface LocationSectionProps {
   dictionary: Dictionary;
 }
+
+const mapEmbedSrc =
+  "https://www.google.com/maps?q=M.A.T-Fish+F%C3%B6gl%C3%B6&z=15&output=embed";
 
 export default function LocationSection({ dictionary }: LocationSectionProps) {
   return (
@@ -42,18 +45,15 @@ export default function LocationSection({ dictionary }: LocationSectionProps) {
           </div>
         </div>
 
-        <div className="flex min-h-[20rem] items-end bg-brand-900 p-8 text-white sm:p-10 lg:col-span-7 lg:min-h-full lg:p-12">
-          <div className="max-w-xl">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-blue-100">
-              {dictionary.contactpage.location.mapTitle}
-            </p>
-            <p className="mt-4 max-w-lg text-lg leading-relaxed text-slate-200 md:text-xl">
-              {dictionary.contactpage.location.mapNotice}
-            </p>
-            <a href={site.googleMapsUrl} target="_blank" rel="noopener noreferrer" className="cta-link-light mt-6">
-              {dictionary.contactpage.location.openMap}
-            </a>
-          </div>
+        <div className="min-h-[24rem] lg:col-span-7 lg:min-h-full">
+          <iframe
+            src={mapEmbedSrc}
+            title={dictionary.contactpage.location.mapTitle}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+            className="h-full min-h-[24rem] w-full border-0"
+          />
         </div>
       </div>
     </section>
