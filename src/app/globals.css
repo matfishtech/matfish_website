@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-newsreader), Georgia, serif;
+  --color-brand-50: #eef3f7;
+  --color-brand-100: #dce7f0;
+  --color-brand-200: #c9d4df;
+  --color-brand-600: #2e6ea6;
+  --color-brand-700: #245983;
+  --color-brand-900: #163a5f;
+  --color-brand-950: #10283f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    background: white;
+    color: #263746;
+    line-height: 1.55;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+
+  ::selection {
+    background: rgb(219 234 254);
+    color: rgb(30 64 175);
+  }
+
+  *:focus-visible {
+    outline: 2px solid rgb(37 99 235);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .site-container {
+    @apply mx-auto w-full max-w-[1360px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .nav-link {
+    @apply relative px-1 py-2 text-[0.92rem] font-medium text-slate-600 transition-colors;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 right-0 -bottom-[0.2rem] h-px scale-x-0 bg-brand-700 transition-transform;
+  }
+
+  .nav-link[data-active="true"]::after {
+    @apply scale-x-100;
+  }
+
+  .nav-link[data-active="true"] {
+    @apply text-brand-900;
+  }
+
+  .nav-link:hover {
+    @apply text-brand-900;
+  }
+
+  .cta-link {
+    @apply inline-flex items-center rounded-full border border-brand-900 bg-brand-900 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-950;
+  }
+
+  .cta-link-light {
+    @apply inline-flex items-center rounded-full border border-white bg-white px-7 py-3.5 text-sm font-semibold text-brand-900 transition-colors hover:bg-brand-50;
+  }
+
+  .section-copy {
+    @apply text-lg leading-relaxed text-slate-600 md:text-xl;
+  }
+
+  .section-eyebrow {
+    @apply mb-4 text-[0.76rem] font-semibold uppercase tracking-[0.16em] text-brand-700;
+  }
+
+  .section-divider {
+    @apply mb-6 h-px w-16 bg-brand-200;
+  }
+}
+
+@layer utilities {
+  .hero-text-shadow {
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .route-fade {
+    animation: route-fade-in 180ms ease-out;
+    will-change: opacity;
+  }
+
+  @keyframes route-fade-in {
+    from {
+      opacity: 0.88;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .route-fade {
+      animation: none;
+    }
+  }
+}

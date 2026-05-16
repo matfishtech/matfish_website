@@ -7,7 +7,7 @@
 
   "meta": {
     "title": "M.A.T-Fish | Korkealaatuiset kalatuotteet ja -jalostus.",
-    "description": "Korkealaatuista kasvatettua kirjolohta, siikaa ja nieriää. Tuoreen kalan toimitus ympäri Suomen."
+    "description": "Korkealaatuista kasvatettua kirjolohta ja siikaa sekä sesongin kirjolohen mätiä. Tuoreen kalan toimitus ympäri Suomen."
   },
 
   "navigation": {
@@ -26,19 +26,19 @@
     },
     "features": {
       "quality": {
-        "title": "Korkea Laatu",
+        "title": "Korkea laatu",
         "description": "Huolellisesti valittua premium-kalaa Ahvenanmaan saariston puhtaista vesistä."
       },
       "fresh": {
-        "title": "Tuoreus Taattu",
+        "title": "Tuoreus taattu",
         "description": "Suora toimitus paikallisesta laitoksestamme parhaan laadun varmistamiseksi."
       },
       "sustainable": {
-        "title": "Kestävä Toiminta",
+        "title": "Kestävä toiminta",
         "description": "Sitoutuneet ympäristötietoisiin ja kestäviin kalastusmenetelmiin."
       },
       "local": {
-        "title": "Paikallinen Osaaminen",
+        "title": "Paikallinen osaaminen",
         "description": "Tuemme paikallisia yhteisöjä ja perinteitä Ahvenanmaan saaristossa."
       }
     },
@@ -59,7 +59,7 @@
     "subtitle": "Tuotamme korkealaatuista kalaa Ahvenanmaan saariston puhtaista vesistä, yhdistäen perinteisen tietotaidon ja modernit kestävät käytännöt.",
     "stats": {
       "countries": "Vientimaat",
-      "years": "Vuotta Kokemusta",
+      "years": "Vuotta kokemusta",
       "sustainable": "Vastuullinen",
       "production": "Vuosituotanto"
     },
@@ -72,11 +72,6 @@
       "name": "Siika",
       "description": "Arvostettu pohjoismainen ruokakala, joka tunnetaan hienostuneesta maustaan ja monikäyttöisyydestään.",
       "details": "Siikamme tunnistaa sen vähärasvaisesta, proteiinipitoisesta valkoisesta lihasta. Kasvatamme siiat 0,4-1 kilon myyntikokoon valvotuissa olosuhteissa. Se sopii erinomaisesti niin graavattavaksi, savustettavaksi kuin paistettavaksikin. Toimitamme siian tuoreena."
-    },
-    "char": {
-      "name": "Nieriä",
-      "description": "Yksi maailman pohjoisimmista lohikalalajeista, tarjoten hienostuneen makuprofiilin.",
-      "details": "Kasvatamme nieriät puhtaissa ja kylmissä vesissä, jotka vastaavat niiden luonnollista elinympäristöä. Liha on väriltään vaaleanpunaisen ja oranssin väliltä, maultaan pehmeä ja aromaattinen. Runsaasti omega-3-rasvahappoja ja tärkeitä vitamiineja sisältävä nieriä kasvaa 1,5-2 kilon painoiseksi ennen toimitusta."
     },
     "caviar": {
       "name": "Kirjolohen mäti",
@@ -92,7 +87,7 @@
 
   "about": {
     "hero": {
-      "title": "Tietoa M.A.T-Fish:stä",
+      "title": "Tietoa M.A.T-Fishistä",
       "description": "Ahvenanmaan saaristossa vuonna 2010 perustettu kalankasvatusyritys, joka on omistautunut laadulle ja kestävälle kehitykselle."
     },
     "values": {
@@ -144,15 +139,33 @@
     "title": "Ota yhteyttä",
     "subtitle": "Ota yhteyttä asiantuntijatiimiimme keskustellaksesi kalatarpeistasi.",
     "roles": {
-      "ceo": "Toimitusjohtaja",
-      "sales": "Myyntiedustaja",
+      "ceo": "Toimitusjohtaja | Myynti ja ostot",
+      "sales": "Hallinto- ja logistiikkakoordinaattori",
       "chairman": "Hallituksen puheenjohtaja"
     },
-    "location": {
-      "title": "Sijaintimme",
-      "subtitle": "Toimimme Ahvenanmaan saariston sydämessä, Föglön kunnassa Flisön kylässä.",
-      "visiting": "Käyntiosoite",
-      "postal": "Postiosoite"
+      "location": {
+        "title": "Sijaintimme",
+        "subtitle": "Toimimme Ahvenanmaan saariston sydämessä, Föglön kunnassa Flisön kylässä.",
+        "visiting": "Käyntiosoite",
+        "postal": "Postiosoite",
+      "mapTitle": "Karttapalvelu",
+      "mapNotice": "Emme lataa kolmannen osapuolen karttaa automaattisesti yksityisyytesi suojaamiseksi. Voit avata sijainnin Google Mapsissa omasta pyynnöstäsi.",
+      "openMap": "Avaa Google Maps"
+      },
+    "form": {
+      "title": "Lähetä viesti",
+      "description": "Kerro lyhyesti tarpeestasi, niin palaamme sinulle mahdollisimman pian.",
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "company": "Yritys",
+      "phone": "Puhelin",
+      "subject": "Aihe",
+      "message": "Viesti",
+      "submit": "Lähetä viesti",
+      "sending": "Lähetetään viestiä...",
+      "success": "Kiitos viestistäsi. Palaamme sinulle pian.",
+      "error": "Viestin lähetys epäonnistui. Yritä uudelleen tai lähetä sähköpostia osoitteeseen info@matfish.fi.",
+      "privacy": "Lähettämällä lomakkeen hyväksyt, että käsittelemme tietojasi yhteydenottoosi vastaamiseksi."
     }
   },
 
@@ -176,17 +189,24 @@
     "error": "Virhe",
     "success": "Onnistui",
     "required": "Pakollinen",
-    "optional": "Valinnainen"
+    "optional": "Valinnainen",
+    "accessibility": {
+      "skipToContent": "Siirry sisältöön",
+      "primaryNavigation": "Päänavigaatio",
+      "mobileNavigation": "Mobiilinavigaatio",
+      "selectLanguage": "Valitse kieli",
+      "toggleMenu": "Avaa tai sulje valikko"
+    }
   },
 
   "seo": {
     "home": {
       "title": "M.A.T-Fish - Korkealaatuiset kalatuotteet ja -jalostus",
-      "description": "Johtava korkealaatuisten kalatuotteiden toimittaja Suomessa. Tuore kirjolohi, siika, nieriä ja kaviaari kestävistä lähteistä."
+      "description": "Johtava korkealaatuisten kalatuotteiden toimittaja Suomessa. Tuore kirjolohi, siika ja sesongin mäti kestävistä lähteistä."
     },
     "products": {
       "title": "Tuotteemme - Premium-kala ja kaviaari | M.A.T-Fish",
-      "description": "Tutustu valikoimaamme premium-kalatuotteita: kirjolohi, siika, nieriä ja sesongin kaviaari. Tuoretta ja kestävästi kasvatettua."
+      "description": "Tutustu valikoimaamme premium-kalatuotteita: kirjolohi, siika ja sesongin mäti. Tuoretta ja kestävästi kasvatettua."
     },
     "about": {
       "title": "Tietoa meistä - M.A.T-Fish Ab Oy",
@@ -202,10 +222,17 @@
     "home": "Etusivu",
     "products": "Tuotteet",
     "about": "Tietoa meistä",
-    "contact": "Yhteystiedot"
+    "contact": "Yhteystiedot",
+    "faq": "Usein kysytyt kysymykset"
   },
   "footer": {
     "menu": "Valikko",
+    "legal": "Ehdot ja tietosuoja",
+    "codeOfConduct": "Toimintaperiaatteet",
+    "privacy": "Tietosuojaseloste",
+    "terms": "Käyttöehdot",
+    "cookies": "Evästekäytäntö",
+    "cookieSettings": "Evästeasetukset",
     "contact": "Ota yhteyttä",
     "followUs": "Seuraa meitä",
     "rights": "Kaikki oikeudet pidätetään",

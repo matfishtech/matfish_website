@@ -7,7 +7,7 @@
 
   "meta": {
     "title": "M.A.T-Fish | Premium fiskprodukter och förädling.",
-    "description": "Premium kvalitet odlad regnbågslax, sik och röding. Färsk fiskleverans över hela Finland."
+    "description": "Premium kvalitet odlad regnbågslax och sik samt säsongsvis regnbågsrom. Färsk fiskleverans över hela Finland."
   },
 
   "navigation": {
@@ -26,19 +26,19 @@
     },
     "features": {
       "quality": {
-        "title": "Premium Kvalitet",
+        "title": "Premiumkvalitet",
         "description": "Noga utvald premiumfisk från Ålands skärgårds rena vatten."
       },
       "fresh": {
-        "title": "Garanterad Färskhet",
+        "title": "Garanterad färskhet",
         "description": "Direktleverans från vår lokala anläggning för att säkerställa bästa kvalitet."
       },
       "sustainable": {
-        "title": "Hållbar Verksamhet",
+        "title": "Hållbar verksamhet",
         "description": "Engagerade i miljömedvetna och hållbara fiskemetoder."
       },
       "local": {
-        "title": "Lokal Excellence",
+        "title": "Lokal expertis",
         "description": "Vi stödjer lokala samhällen och traditioner i Ålands skärgård."
       }
     },
@@ -59,7 +59,7 @@
     "subtitle": "Vi producerar högkvalitativ fisk från Ålands skärgårds rena vatten, där vi kombinerar traditionell expertis med moderna hållbara metoder.",
     "stats": {
       "countries": "Exportländer",
-      "years": "Års Erfarenhet",
+      "years": "Års erfarenhet",
       "sustainable": "Hållbar",
       "production": "Årsproduktion"
     },
@@ -72,11 +72,6 @@
       "name": "Sik",
       "description": "En högt värderad nordisk matfisk, känd för sin förfinade smak och mångsidighet i matlagningen.",
       "details": "Vår sik kännetecknas av sitt magra, proteinrika vita kött. Vi odlar sik till en försäljningsstorlek på 0,4-1 kilo under kontrollerade förhållanden. Den passar utmärkt för gravning, rökning eller stekning. Vi levererar siken färsk."
-    },
-    "char": {
-      "name": "Röding",
-      "description": "En av världens nordligaste laxfiskarter, med en delikat smakprofil.",
-      "details": "Vi odlar röding i rena och kalla vatten som efterliknar deras naturliga livsmiljö. Köttet är rosa till orange i färgen, med en mjuk och aromatisk smak. Rik på omega-3-fettsyror och viktiga vitaminer växer röding till 1,5-2 kilo innan leverans."
     },
     "caviar": {
       "name": "Regnbågsrom",
@@ -144,15 +139,33 @@
     "title": "Kontakta oss",
     "subtitle": "Kontakta vårt expertteam för att diskutera dina fiskbehov.",
     "roles": {
-      "ceo": "Verkställande direktör",
-      "sales": "Försäljningsrepresentant",
+      "ceo": "Verkställande direktör | Försäljning och inköp",
+      "sales": "Administrations- och logistikkoordinator",
       "chairman": "Styrelseordförande"
     },
-    "location": {
-      "title": "Vår plats",
-      "subtitle": "Vi verkar i hjärtat av Ålands skärgård, i Flisö by i Föglö kommun.",
-      "visiting": "Besöksadress",
-      "postal": "Postadress"
+      "location": {
+        "title": "Vår plats",
+        "subtitle": "Vi verkar i hjärtat av Ålands skärgård, i Flisö by i Föglö kommun.",
+        "visiting": "Besöksadress",
+        "postal": "Postadress",
+      "mapTitle": "Karttjänst",
+      "mapNotice": "Vi laddar inte en tredjepartskarta automatiskt för att skydda din integritet. Du kan öppna platsen i Google Maps på egen begäran.",
+      "openMap": "Öppna Google Maps"
+      },
+    "form": {
+      "title": "Skicka meddelande",
+      "description": "Berätta kort om ditt behov så återkommer vi till dig så snart som möjligt.",
+      "name": "Namn",
+      "email": "E-post",
+      "company": "Företag",
+      "phone": "Telefon",
+      "subject": "Ämne",
+      "message": "Meddelande",
+      "submit": "Skicka meddelande",
+      "sending": "Skickar meddelande...",
+      "success": "Tack för ditt meddelande. Vi återkommer snart.",
+      "error": "Skickandet misslyckades. Försök igen eller skicka e-post till info@matfish.fi.",
+      "privacy": "Genom att skicka formuläret godkänner du att vi behandlar dina uppgifter för att kunna besvara din förfrågan."
     }
   },
 
@@ -176,24 +189,31 @@
     "error": "Fel",
     "success": "Klart",
     "required": "Obligatorisk",
-    "optional": "Valfri"
+    "optional": "Valfri",
+    "accessibility": {
+      "skipToContent": "Gå till innehållet",
+      "primaryNavigation": "Huvudnavigering",
+      "mobileNavigation": "Mobilnavigering",
+      "selectLanguage": "Välj språk",
+      "toggleMenu": "Öppna eller stäng menyn"
+    }
   },
 
   "seo": {
     "home": {
       "title": "M.A.T-Fish - Premium fiskprodukter & bearbetning",
-      "description": "Ledande leverantör av premiumfiskprodukter i Finland. Färsk regnbåge, sik, röding och kaviar från hållbara källor."
+      "description": "Ledande leverantör av premiumfiskprodukter i Finland. Färsk regnbåge, sik och säsongsvis rom från hållbara källor."
     },
     "products": {
       "title": "Våra produkter - Premiumfisk & kaviar | M.A.T-Fish",
-      "description": "Upptäck vårt utbud av premiumfiskprodukter inklusive regnbåge, sik, röding och säsongskaviar. Färsk och hållbart odlad."
+      "description": "Upptäck vårt utbud av premiumfiskprodukter inklusive regnbåge, sik och säsongsvis rom. Färsk och hållbart odlad."
     },
     "about": {
       "title": "Om oss - M.A.T-Fish Ab Oy",
       "description": "Läs om M.A.T-Fishs historia, värderingar och engagemang för hållbar fiskodling och bearbetning i Finlands skärgård."
     },
     "contact": {
-      "title": "Kontakta M.A.T-Fish - Nå oss",
+      "title": "Kontakta M.A.T-Fish",
       "description": "Kontakta M.A.T-Fish för premiumfiskprodukter och bearbetningstjänster. Beläget i Föglö, Finland."
     }
   },
@@ -202,10 +222,17 @@
     "home": "Hem",
     "products": "Produkter",
     "about": "Om oss",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "faq": "Vanliga frågor"
   },
   "footer": {
     "menu": "Meny",
+    "legal": "Villkor och integritet",
+    "codeOfConduct": "Uppförandekod",
+    "privacy": "Integritetspolicy",
+    "terms": "Användarvillkor",
+    "cookies": "Cookiepolicy",
+    "cookieSettings": "Cookieinställningar",
     "contact": "Kontakta oss",
     "followUs": "Följ oss",
     "rights": "Alla rättigheter förbehållna",

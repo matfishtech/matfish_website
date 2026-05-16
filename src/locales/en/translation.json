@@ -15,48 +15,48 @@
   },
 
   "meta": {
-    "title": "M.A.T-Fish | Premium Fish Products & Processing.",
-    "description": "Premium quality farmed rainbow trout, whitefish, and char. Fresh fish delivery across Finland."
+    "title": "M.A.T-Fish | Fresh Fish Supplier and Fish Farming in Finland.",
+    "description": "M.A.T-Fish is a fish farming company in Aland, Finland, producing farmed rainbow trout, whitefish and seasonal rainbow trout roe."
   },
 
   "home": {
     "hero": {
-      "subtitle": "Sustainable fish farming from the pristine waters of Åland Archipelago.",
+      "subtitle": "Fresh fish products and sustainable fish farming from the clean waters of the Aland archipelago.",
       "contact": "Contact Us"
     },
     "features": {
       "quality": {
         "title": "Premium Quality",
-        "description": "Carefully selected premium fish from the clean waters of the Åland Archipelago."
+        "description": "Carefully produced farmed fish from the clean Nordic waters of the Aland archipelago."
       },
       "fresh": {
         "title": "Freshness Guaranteed",
-        "description": "Direct delivery from our local facility to ensure the best quality."
+        "description": "Fresh fish products handled close to production to support consistent quality for commercial customers."
       },
       "sustainable": {
-        "title": "Sustainable Practice",
-        "description": "Committed to environmentally conscious and sustainable fishing methods."
+        "title": "Sustainable practices",
+        "description": "Fish farming practices focused on quality, responsibility and respect for the local marine environment."
       },
       "local": {
         "title": "Local Excellence",
-        "description": "We support local communities and traditions in the Åland Archipelago."
+        "description": "Rooted in Foglo and the Aland archipelago, combining local knowledge with modern fish production."
       }
     },
     "about": {
       "title": "Our Commitment.",
-      "description": "We are dedicated to sustainable fish farming in the Åland Archipelago. Our methods honor both tradition and innovation, ensuring the highest quality products while protecting our valuable marine environment.",
+      "description": "M.A.T-Fish is dedicated to responsible fish farming in the Aland archipelago. We combine local expertise, careful production and modern practices to produce high-quality fish for food industry customers and further processing.",
       "link": "Learn more about us"
     },
     "contact": {
       "title": "Get in Touch",
-      "description": "Interested in our products? Contact us to learn more about our sustainable fish farming practices and premium products.",
+      "description": "Looking for a fresh fish supplier in Finland? Contact M.A.T-Fish to discuss rainbow trout, whitefish, rainbow trout roe and commercial supply needs.",
       "button": "Contact Us"
     }
   },
 
   "products": {
     "title": "Our Products",
-    "subtitle": "We produce high-quality fish from the pure waters of the Åland Archipelago, combining traditional expertise with modern sustainable practices.",
+    "subtitle": "We produce high-quality farmed fish from the clean waters of the Aland archipelago, combining local expertise with modern practices for commercial customers and further processing.",
     "stats": {
       "countries": "Export Countries",
       "years": "Years Experience",
@@ -65,27 +65,22 @@
     },
     "rainbowTrout": {
       "name": "Rainbow Trout",
-      "description": "Rainbow trout is one of Finland's most popular food fish, known for its versatility and nutritional value.",
-      "details": "We grow rainbow trout under carefully monitored conditions to a sales size of approximately 2.5 kilograms over two growing seasons. It is a rich source of omega-3 fatty acids, vitamin D, and protein, making it suitable for both everyday meals and special occasions."
+      "description": "Rainbow trout is one of Finland's most popular food fish and an important product for commercial fish supply.",
+      "details": "We grow rainbow trout under carefully monitored conditions to a sales size of approximately 2.5 kilograms over two growing seasons. Rainbow trout is valued for its versatility, omega-3 fatty acids, vitamin D and protein, making it suitable for food industry use, retail and professional kitchens."
     },
     "whitefish": {
       "name": "Whitefish",
-      "description": "A highly valued Nordic food fish, known for its refined taste and versatility in cooking.",
-      "details": "Our whitefish is characterized by its low-fat, high-protein white flesh. We raise whitefish to a sales size of 0.4-1 kilograms under controlled conditions. It is perfect for curing, smoking, or frying. We deliver whitefish fresh."
-    },
-    "char": {
-      "name": "Arctic Char",
-      "description": "One of the northernmost salmonid species, offering a delicate flavor profile.",
-      "details": "We raise Arctic char in pure and cold waters that mimic their natural habitat. The flesh varies between pink and orange in color, with a soft and aromatic flavor. Rich in omega-3 fatty acids and essential vitamins, Arctic char grows to 1.5-2 kilograms before delivery."
+      "description": "Whitefish is a highly valued Nordic food fish known for refined flavor, lean flesh and versatile use.",
+      "details": "Our whitefish is characterized by low-fat, high-protein white flesh. We raise whitefish to a sales size of 0.4-1 kilograms under controlled conditions and deliver it fresh for customers who need consistent Nordic fish quality."
     },
     "caviar": {
       "name": "Rainbow Trout Roe",
-      "description": "A seasonal delicacy available from late autumn to early winter.",
-      "details": "Rich in omega-3 fatty acids and vitamin B12, the roe is both delicious and nutritious. We deliver roe sacks to our clients for further processing, ensuring freshness and the highest quality for the commercial sector."
+      "description": "Rainbow trout roe is a seasonal delicacy available from late autumn to early winter.",
+      "details": "Rich in omega-3 fatty acids and vitamin B12, rainbow trout roe is both flavorful and nutritious. We deliver roe sacks to clients for further processing, supporting freshness and quality for the commercial sector."
     },
     "contact": {
       "title": "Let's Discuss Your Needs",
-      "description": "We'd be happy to tell you more about our products and discuss how we could work together to meet your requirements.",
+      "description": "Contact us to discuss product availability, commercial supply needs and how M.A.T-Fish can support your fish product requirements.",
       "button": "Contact Us"
     }
   },
@@ -93,17 +88,17 @@
   "about": {
     "hero": {
       "title": "About M.A.T-Fish",
-      "description": "A fish farming company from the Åland Archipelago, founded in 2010, dedicated to quality and sustainability."
+      "description": "A fish farming company from the Aland archipelago, founded in 2010 and focused on high-quality farmed fish products for commercial customers."
     },
     "values": {
       "title": "Our Values",
       "quality": {
         "title": "Quality Excellence",
-        "description": "We maintain the highest standards throughout our operations, from farming to delivery. Every fish is raised with care in the clean waters of the Åland Archipelago."
+        "description": "We maintain high standards throughout our operations, from fish farming to delivery. Every product is handled with care to support consistent quality for commercial customers."
       },
       "sustainability": {
         "title": "Environmental Commitment",
-        "description": "Our farming practices are designed to protect the archipelago's unique environment. We believe in sustainable growth that respects nature's balance."
+        "description": "Our farming practices are designed with respect for the archipelago's marine environment. We believe responsible fish farming must balance quality, production and local conditions."
       },
       "responsibility": {
         "title": "Social Responsibility",
@@ -111,7 +106,7 @@
       },
       "community": {
         "title": "Local Heritage",
-        "description": "Deeply rooted in the Åland Archipelago, we preserve traditional knowledge while embracing modern sustainable practices."
+        "description": "Deeply rooted in the Aland archipelago, we combine local knowledge with modern fish farming practices."
       }
     },
     "milestones": {
@@ -142,17 +137,35 @@
 
   "contactpage": {
     "title": "Get in Touch",
-    "subtitle": "Reach out to our team of professionals to explore tailored solutions for your fish requirements.",
+    "subtitle": "Contact our team to discuss fresh fish products, commercial supply, product availability and further processing needs.",
     "roles": {
-      "ceo": "Chief Executive Officer",
-      "sales": "Sales Representative",
+      "ceo": "Chief Executive Officer | Sales and Purchasing",
+      "sales": "Administration and Logistics Coordinator",
       "chairman": "Chairman of the Board"
     },
-    "location": {
-      "title": "Our Location",
-      "subtitle": "We operate in the heart of the Åland Archipelago, in the village of Flisö in the municipality of Föglö.",
-      "visiting": "Visiting Address",
-      "postal": "Postal Address"
+      "location": {
+        "title": "Our Location",
+        "subtitle": "We operate in the heart of the Åland Archipelago, in the village of Flisö in the municipality of Föglö.",
+        "visiting": "Visiting Address",
+        "postal": "Postal Address",
+      "mapTitle": "Map service",
+      "mapNotice": "We do not load a third-party map automatically in order to protect your privacy. You can open the location in Google Maps on your own request.",
+      "openMap": "Open Google Maps"
+      },
+    "form": {
+      "title": "Send a message",
+      "description": "Tell us briefly what fish products, volumes or supply information you need and we will get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending message...",
+      "success": "Thank you for your message. We will get back to you soon.",
+      "error": "Sending failed. Please try again or send an email to info@matfish.fi.",
+      "privacy": "By sending the form, you agree that we may process your information in order to respond to your inquiry."
     }
   },
 
@@ -176,25 +189,32 @@
     "error": "Error",
     "success": "Success",
     "required": "Required",
-    "optional": "Optional"
+    "optional": "Optional",
+    "accessibility": {
+      "skipToContent": "Skip to content",
+      "primaryNavigation": "Primary navigation",
+      "mobileNavigation": "Mobile navigation",
+      "selectLanguage": "Select language",
+      "toggleMenu": "Toggle menu"
+    }
   },
 
   "seo": {
     "home": {
       "title": "M.A.T-Fish - Premium Fish Products & Processing",
-      "description": "Leading provider of premium quality fish products in Finland. Fresh rainbow trout, whitefish, char, and caviar from sustainable sources."
+      "description": "M.A.T-Fish is a fish farming company and fresh fish supplier in Finland, producing rainbow trout, whitefish and seasonal rainbow trout roe."
     },
     "products": {
-      "title": "Our Products - Premium Fish & Caviar | M.A.T-Fish",
-      "description": "Discover our range of premium fish products including rainbow trout, whitefish, char, and seasonal caviar. Fresh and sustainably farmed."
+      "title": "Fish Products - Rainbow Trout, Whitefish & Roe | M.A.T-Fish",
+      "description": "Discover M.A.T-Fish products: farmed rainbow trout, whitefish and seasonal rainbow trout roe from the Aland archipelago."
     },
     "about": {
       "title": "About Us - M.A.T-Fish Ab Oy",
-      "description": "Learn about M.A.T-Fish's history, values, and commitment to sustainable fish farming and processing in Finland's archipelago."
+      "description": "Learn about M.A.T-Fish, a fish farming company in Foglo, Aland, focused on quality fish products and responsible production."
     },
     "contact": {
-      "title": "Contact M.A.T-Fish - Get in Touch",
-      "description": "Contact M.A.T-Fish for premium fish products and processing services. Located in Föglö, Finland."
+      "title": "Contact M.A.T-Fish - Fresh Fish Supplier in Finland",
+      "description": "Contact M.A.T-Fish in Foglo, Aland, to discuss rainbow trout, whitefish, rainbow trout roe and commercial fish supply."
     }
   },
 
@@ -202,10 +222,17 @@
     "home": "Home",
     "products": "Products",
     "about": "About us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "faq": "FAQ"
   },
   "footer": {
     "menu": "Menu",
+    "legal": "Legal",
+    "codeOfConduct": "Code of Conduct",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "cookieSettings": "Cookie Settings",
     "contact": "Contact Us",
     "followUs": "Follow Us",
     "rights": "All rights reserved",
