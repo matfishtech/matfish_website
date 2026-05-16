@@ -1,7 +1,7 @@
 {
-  "name": "M.A.T-Fish | Premium Fish Products & Processing",
+  "name": "M.A.T-Fish Ab Oy | Korkealaatuiset kalatuotteet",
   "short_name": "M.A.T-Fish",
-  "description": "Premium Finnish rainbow trout, whitefish, and char, delivered fresh across the Nordics. Specializing in fish processing and premium caviar production.",
+  "description": "Korkealaatuista kasvatettua kirjolohta, siikaa ja nieriää Ahvenanmaan saaristosta.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -19,7 +19,7 @@
   "theme_color": "#1e40af",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "/?source=pwa",
+  "start_url": "/fi?source=pwa",
   "scope": "/",
   "orientation": "any",
   "categories": ["food", "business", "shopping"],
@@ -28,19 +28,19 @@
   "prefer_related_applications": false,
   "shortcuts": [
     {
-      "name": "Products",
-      "url": "/en/products",
-      "description": "View our fish products"
+      "name": "Tuotteet",
+      "url": "/fi/products",
+      "description": "Tutustu kalatuotteisiimme"
     },
     {
-      "name": "Contact",
-      "url": "/en/contact",
-      "description": "Contact M.A.T-Fish"
+      "name": "Yhteystiedot",
+      "url": "/fi/contact",
+      "description": "Ota yhteyttä M.A.T-Fishiin"
     },
     {
-      "name": "About Us",
-      "url": "/en/about",
-      "description": "Learn about M.A.T-Fish"
+      "name": "Tietoa meistä",
+      "url": "/fi/about",
+      "description": "Lue lisää M.A.T-Fishistä"
     }
   ]
 }
