@@ -28,7 +28,7 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
           </div>
 
           <form
-            action={process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "https://formspree.io/f/REPLACE_ME"}
+            action={process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT ?? "/contact"}
             method="post"
             className="space-y-6"
             onSubmit={async (event) => {
