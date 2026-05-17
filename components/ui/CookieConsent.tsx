@@ -102,43 +102,60 @@ export default function CookieConsent() {
   const canClose = consent !== null;
 
   return (
-    <aside className="fixed inset-x-3 bottom-3 z-[70] border border-brand-200 bg-white p-4 shadow-lg sm:inset-x-auto sm:right-4 sm:w-[30rem] sm:p-5">
-      <div className="flex items-start justify-between gap-4">
-        <h2 className="text-base font-semibold text-slate-900">{copy.title}</h2>
-        {canClose ? (
+    <aside className="fixed inset-x-3 bottom-3 z-[70] sm:inset-x-6 sm:bottom-6">
+      <div className="mx-auto flex max-w-[1100px] flex-col gap-4 rounded-2xl border border-brand-200/70 bg-white/85 px-5 py-4 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.35)] backdrop-blur-xl sm:px-7 sm:py-5 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:py-4">
+        <div className="flex-1">
+          <div className="flex items-start justify-between gap-4">
+            <h2 className="text-base font-semibold text-slate-900">{copy.title}</h2>
+            {canClose ? (
+              <button
+                type="button"
+                onClick={() => setIsOpen(false)}
+                className="text-sm font-semibold text-slate-500 transition-colors hover:text-slate-900 lg:hidden"
+              >
+                {copy.close}
+              </button>
+            ) : null}
+          </div>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">
+            {copy.description}{" "}
+            <a
+              href={`/${language}/cookies`}
+              className="font-semibold text-brand-800 underline-offset-4 hover:underline"
+            >
+              {copy.learnMore}
+            </a>
+          </p>
+          {canClose ? (
+            <p className="mt-1 text-xs leading-relaxed text-slate-500">{copy.currentChoice}</p>
+          ) : null}
+        </div>
+
+        <div className="flex flex-shrink-0 items-center gap-3">
           <button
             type="button"
-            onClick={() => setIsOpen(false)}
-            className="text-sm font-semibold text-slate-500 transition-colors hover:text-slate-900"
+            onClick={() => persistConsent("rejected")}
+            className="inline-flex h-10 items-center justify-center rounded-md border border-brand-200 px-4 text-sm font-semibold text-slate-700"
           >
-            {copy.close}
+            {copy.reject}
           </button>
-        ) : null}
-      </div>
-      <p className="mt-2 text-sm leading-relaxed text-slate-600">{copy.description}</p>
-      {canClose ? <p className="mt-2 text-sm leading-relaxed text-slate-500">{copy.currentChoice}</p> : null}
-      <a
-        href={`/${language}/cookies`}
-        className="mt-2 inline-block text-sm font-semibold text-brand-800 underline-offset-4 hover:underline"
-      >
-        {copy.learnMore}
-      </a>
-
-      <div className="mt-4 flex items-center gap-3">
-        <button
-          type="button"
-          onClick={() => persistConsent("accepted")}
-          className="inline-flex h-10 items-center justify-center rounded-md bg-brand-900 px-4 text-sm font-semibold text-white"
-        >
-          {copy.accept}
-        </button>
-        <button
-          type="button"
-          onClick={() => persistConsent("rejected")}
-          className="inline-flex h-10 items-center justify-center rounded-md border border-brand-200 px-4 text-sm font-semibold text-slate-700"
-        >
-          {copy.reject}
-        </button>
+          <button
+            type="button"
+            onClick={() => persistConsent("accepted")}
+            className="inline-flex h-10 items-center justify-center rounded-md bg-brand-900 px-4 text-sm font-semibold text-white"
+          >
+            {copy.accept}
+          </button>
+          {canClose ? (
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              className="hidden text-sm font-semibold text-slate-500 transition-colors hover:text-slate-900 lg:inline"
+            >
+              {copy.close}
+            </button>
+          ) : null}
+        </div>
       </div>
     </aside>
   );
