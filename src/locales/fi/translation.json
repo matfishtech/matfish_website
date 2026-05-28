@@ -165,6 +165,7 @@
       "sending": "Lähetetään viestiä...",
       "success": "Kiitos viestistäsi. Palaamme sinulle pian.",
       "error": "Viestin lähetys epäonnistui. Yritä uudelleen tai lähetä sähköpostia osoitteeseen info@matfish.fi.",
+      "turnstileError": "Vahvistus epäonnistui. Yritä uudelleen.",
       "privacy": "Lähettämällä lomakkeen hyväksyt, että käsittelemme tietojasi yhteydenottoosi vastaamiseksi."
     }
   },

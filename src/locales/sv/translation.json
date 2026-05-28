@@ -165,6 +165,7 @@
       "sending": "Skickar meddelande...",
       "success": "Tack för ditt meddelande. Vi återkommer snart.",
       "error": "Skickandet misslyckades. Försök igen eller skicka e-post till info@matfish.fi.",
+      "turnstileError": "Verifieringen misslyckades. Försök igen.",
       "privacy": "Genom att skicka formuläret godkänner du att vi behandlar dina uppgifter för att kunna besvara din förfrågan."
     }
   },

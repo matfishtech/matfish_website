@@ -1,9 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Script from "next/script";
 import { useState } from "react";
 import { dispatchToast } from "@/components/ui/ToastHost";
 import { getLocalizedPath, type Dictionary, type Language } from "@/lib/i18n";
+
+const TURNSTILE_SITE_KEY = "0x4AAAAAADX7EkKW31bN7cUk";
 
 interface ContactFormSectionProps {
   lang: Language;
@@ -52,6 +55,12 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
               try {
                 const formData = new FormData(form);
 
+                // Append Cloudflare Turnstile token
+                const turnstileToken = window.turnstile?.getResponse();
+                if (turnstileToken) {
+                  formData.append("cf-turnstile-response", turnstileToken);
+                }
+
                 const response = await fetch(form.action, {
                   method: "POST",
                   body: formData,
@@ -61,17 +70,34 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
                 });
 
                 if (!response.ok) {
+                  // Check for Turnstile-specific errors
+                  try {
+                    const body = await response.json() as { ok: boolean; error?: string };
+                    if (body.error === "turnstile_missing" || body.error === "turnstile_failed") {
+                      throw new Error("turnstile");
+                    }
+                  } catch (parseErr) {
+                    if (parseErr instanceof Error && parseErr.message === "turnstile") {
+                      throw parseErr;
+                    }
+                  }
                   throw new Error("Contact form submission failed");
                 }
 
                 form.reset();
                 setStatusMessage(formCopy.success);
                 dispatchToast("success", formCopy.success);
-              } catch {
-                setStatusMessage(formCopy.error);
-                dispatchToast("error", formCopy.error);
+              } catch (err) {
+                const isTurnstileError = err instanceof Error && err.message === "turnstile";
+                const errorMsg = isTurnstileError
+                  ? (formCopy.turnstileError ?? formCopy.error)
+                  : formCopy.error;
+                setStatusMessage(errorMsg);
+                dispatchToast("error", errorMsg);
               } finally {
                 setSending(false);
+                // Reset the Turnstile widget so it can be solved again on retry
+                window.turnstile?.reset();
               }
             }}
           >
@@ -168,6 +194,13 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
               />
             </label>
 
+            {/* Cloudflare Turnstile anti-bot widget */}
+            <div
+              className="cf-turnstile pt-2"
+              data-sitekey={TURNSTILE_SITE_KEY}
+              data-theme="light"
+            />
+
             <div className="flex flex-col gap-4 pt-4">
               <button type="submit" className="cta-link w-full justify-center md:w-auto" disabled={sending}>
                 {formCopy.submit}
@@ -185,6 +218,11 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
               {statusMessage}
             </p>
           </form>
+
+          <Script
+            src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+            strategy="lazyOnload"
+          />
         </div>
       </div>
     </section>

@@ -165,6 +165,7 @@
       "sending": "Sending message...",
       "success": "Thank you for your message. We will get back to you soon.",
       "error": "Sending failed. Please try again or send an email to info@matfish.fi.",
+      "turnstileError": "Verification failed. Please try again.",
       "privacy": "By sending the form, you agree that we may process your information in order to respond to your inquiry."
     }
   },
