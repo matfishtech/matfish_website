@@ -18,6 +18,7 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
   const [statusMessage, setStatusMessage] = useState("");
   const [sending, setSending] = useState(false);
   const [formStartedAt] = useState(() => Date.now());
+  const [turnstileFailed, setTurnstileFailed] = useState(false);
 
   return (
     <section className="bg-brand-50 py-20 md:py-24 lg:py-32">
@@ -55,10 +56,14 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
               try {
                 const formData = new FormData(form);
 
-                // Append Cloudflare Turnstile token
-                const turnstileToken = window.turnstile?.getResponse();
-                if (turnstileToken) {
-                  formData.append("cf-turnstile-response", turnstileToken);
+                // Append Cloudflare Turnstile token if available.
+                // Skip if a previous attempt already failed verification —
+                // the backend in "optional" mode will accept without a token.
+                if (!turnstileFailed) {
+                  const turnstileToken = window.turnstile?.getResponse();
+                  if (turnstileToken) {
+                    formData.append("cf-turnstile-response", turnstileToken);
+                  }
                 }
 
                 const response = await fetch(form.action, {
@@ -71,20 +76,21 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
 
                 if (!response.ok) {
                   // Check for Turnstile-specific errors
+                  let errorType = "generic";
                   try {
                     const body = await response.json() as { ok: boolean; error?: string };
                     if (body.error === "turnstile_missing" || body.error === "turnstile_failed") {
-                      throw new Error("turnstile");
+                      errorType = "turnstile";
                     }
-                  } catch (parseErr) {
-                    if (parseErr instanceof Error && parseErr.message === "turnstile") {
-                      throw parseErr;
-                    }
+                  } catch {
+                    // JSON parse failed — treat as generic error
                   }
-                  throw new Error("Contact form submission failed");
+                  throw new Error(errorType);
                 }
 
                 form.reset();
+                window.turnstile?.reset();
+                setTurnstileFailed(false);
                 setStatusMessage(formCopy.success);
                 dispatchToast("success", formCopy.success);
               } catch (err) {
@@ -92,12 +98,13 @@ export default function ContactFormSection({ lang, dictionary }: ContactFormSect
                 const errorMsg = isTurnstileError
                   ? (formCopy.turnstileError ?? formCopy.error)
                   : formCopy.error;
+                if (isTurnstileError) {
+                  setTurnstileFailed(true);
+                }
                 setStatusMessage(errorMsg);
                 dispatchToast("error", errorMsg);
               } finally {
                 setSending(false);
-                // Reset the Turnstile widget so it can be solved again on retry
-                window.turnstile?.reset();
               }
             }}
           >
