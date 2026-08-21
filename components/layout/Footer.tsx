@@ -122,9 +122,22 @@ export default function Footer({ lang, dictionary }: FooterProps) {
         </div>
 
         <div className="mt-12 flex flex-col gap-5 border-t border-white/15 pt-5 md:flex-row md:items-center md:justify-between">
-          <p className="text-sm text-slate-200">
-            &copy; {year} {site.name}. {dictionary.footer.rights}
-          </p>
+          <div className="text-sm text-slate-200">
+            <p>
+              &copy; {year} {site.name}. {dictionary.footer.rights}
+            </p>
+            <p className="mt-1">
+              {dictionary.footer.siteBy}{" "}
+              <a
+                href="https://www.attractor.fi/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold text-white transition-colors hover:text-blue-100"
+              >
+                Attractor Oy
+              </a>
+            </p>
+          </div>
 
           <div className="flex items-center gap-5 md:justify-end">
             {socialItems.map((item) => {
