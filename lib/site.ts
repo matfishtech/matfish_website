@@ -5,7 +5,7 @@ export const site = {
   shortName: "M.A.T-FISH",
   url: "https://matfish.fi",
   themeColor: "#1e40af",
-  googleSiteVerification: "GEIOtRN4nbQPFufmzO4ys2FYsJeotW8UfmKv9VBZgZA",
+  googleSiteVerification: "cDbxe2t4RfTdu1eB8Se6GrHpkgEE6-m6zKUbh8_T37s",
   googleAnalyticsMeasurementId: "G-BVE7D47XXV",
   googleMapsUrl:
     "https://www.google.com/maps/search/?api=1&query=M.A.T-Fish%20Ab%20Oy%2C%20Flis%C3%B6v%C3%A4gen%20240%2C%2022710%20F%C3%B6gl%C3%B6",

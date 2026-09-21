@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog";
-import { getLocalizedPath, languages, routeSlugs } from "@/lib/i18n";
+import { getCanonicalUrl, languages, routeSlugs } from "@/lib/i18n";
 import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -18,8 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const lang of languages) {
     for (const slug of indexableRouteSlugs) {
-      const path = getLocalizedPath(lang, slug);
-      const url = new URL(path, site.url).toString();
+      const url = getCanonicalUrl(lang, slug);
       const lastModified = slug === "blog" ? new Date(latestBlogUpdate) : siteUpdatedAt;
 
       entries.push({
@@ -29,8 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
 
     for (const blogPost of blogPosts) {
-      const path = getLocalizedPath(lang, `blog/${blogPost.slug}`);
-      const url = new URL(path, site.url).toString();
+      const url = getCanonicalUrl(lang, `blog/${blogPost.slug}`);
       entries.push({
         url,
         lastModified: new Date(blogPost.publishedAt),

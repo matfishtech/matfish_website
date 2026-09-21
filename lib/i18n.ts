@@ -59,7 +59,8 @@ export function getLocalizedPath(lang: Language, slug = "") {
 }
 
 export function getCanonicalUrl(lang: Language, slug = "") {
-  return new URL(getLocalizedPath(lang, slug), site.url).toString();
+  const path = getLocalizedPath(lang, slug);
+  return new URL(`${path}/`, site.url).toString();
 }
 
 export function getAlternateLinks(slug = "") {
